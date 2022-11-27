@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>table</title>
+	<link rel="stylesheet" href="">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			height: 100vh;
+			padding: 10px;
+			font-family: 'Poppins',sans-serif;
+		}
+		.container{
+			max-width: 700px;
+			width: 100%;
+			margin: 0 auto;
+			padding: 10px;
+			border-radius: 10px;
+		}
+		h1{
+			text-align: center;
+			padding-bottom: 40px;
+		}
+		table{
+			border-collapse: collapse;
+		}
+		th{
+			background-color: #00E7FF;
+		}
+		th,td{
+			height: 50px;
+			width: 200px;
+			text-align: left;
+			color: #3F0071;
+			border: 1px solid black;
+			padding: 10px;
+
+		}
+		tr:hover{
+			background-color: #ddd;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Danh sách sinh viên</h1>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Mã sinh viên</th>
+					<th>Họ tên</th>
+					<th>Quê quán</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>20103100720</td>
+					<td>Đoàn Trọng Nhất</td>
+					<td>Hải Dương</td>
+					<td>nhatdz22222@gmail.com</td>
+				</tr>
+				<tr>
+					<td>20103100191</td>
+					<td>Nguyễn văn Tuấn</td>
+					<td>Hà Nội</td>
+					<td>tuannguyen2@gmail.com</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
