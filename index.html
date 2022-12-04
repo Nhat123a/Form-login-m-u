@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>form mẫu</title>
-	<link rel="stylesheet" href="">
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-
-		*{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-		body{
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
 			height: 100vh;
 			background-image:linear-gradient(135deg,#71b7e6,#9b59b6);
 			display: flex;
@@ -30,10 +29,11 @@
 			padding: 30px 20px;
 			background-color: #F9F9F9;
 		}
-		h1{
-			text-align: center;
+       h1{
+        text-align: center;
+       }
 
-		}
+		
 		.container label{
 			display: inline-block;
 			padding: 5px;
@@ -54,22 +54,17 @@
 		}
 		.container input:focus,
 		.container input:hover,
-		.container input:valid{
+		.container input:valid {
 			border-color: #9b59b6;
 			border-bottom-width:2px ;
 		}
-		.button1{
-			margin-bottom: 80px;
-			position: relative;
-		}
-		.btn{
-			height: 40px;
-			margin: 35px 0;
+        .btn{
+            margin: 20px 40px 0 0;
+            
+        }
 
-		}
-		.btn1{
-			width: 60%;
-			height: 100%;
+        .btn1{
+            width: 65%;
 			outline: none;
 			color: #fff;
 			border: none;
@@ -77,68 +72,60 @@
 			letter-spacing: 1px;
 			background: linear-gradient(135deg,#71b7e6,#9b59b6);
 			border-radius: 5px;
-			position: absolute;
-			top: 5px;
-			left: 100px;
+            height: 38px;
+            margin-bottom: 20px;
 		}
-		.btn1:hover{
+        .btn2{
+            width: 65%;
+			outline: none;
+			color: #fff;
+			border: none;
+			font-weight: 500;
+			letter-spacing: 1px;
+			background: linear-gradient(135deg,#71b7e6,#9b59b6);
+			border-radius: 5px;
+            height: 38px;
+		}
+        .btn1:hover{
 			background: linear-gradient(-135deg,#71b7e6,#9b59b6);
 		}
 		.btn2:hover{
 			background: linear-gradient(-135deg,#71b7e6,#9b59b6);
 		}
-		a{
+        a{
 			text-decoration: none;
 			position: relative;
-			top: 25px;
-			left: 282px;
+			top: -12px;
+			left: 185px;
 			border-bottom: 2px solid #9b59b6;
 
 		}
-		.btn2{
-			width: 60%;
-			height: 100%;
-			outline: none;
-			color: #fff;
-			border: none;
-			font-weight: 500;
-			letter-spacing: 1px;
-			background: linear-gradient(135deg,#71b7e6,#9b59b6);
-			border-radius: 5px;
-			position: absolute;
-			top: 84px;
-			left: 100px;
-
-		}
-		form{
-			position: relative;
-			top: 50%;
-			left: 15%;
-		}
-
-	</style>
+        form{
+            position: relative;
+            top: 50%;
+			left: 18%;
+        }
+    </style>
 </head>
 <body>
-	<div class="container">
-		<h1>Thông tin Bệnh Nhân</h1>
-		<form action="" method="get" >
-			<label for="">Mã sinh viên</label>
-			<input type="text" name="masv" placeholder="Nhập mã sinh viên" required >
-			<label for="">Họ và tên</label>
-			<input type="text" name="hoten" placeholder="Nhập họ tên" required>
-			<label for="">Quê quán</label>
-			<input type="text" name="masv" placeholder="Nhập Quê quán" required>
-			<label for="">Email</label>
-			<input type="text" name="masv" placeholder="Nhập Email" required>
-			
-		</form>
-		<div class="button1">
-				<div class="btn">
-				<button class="btn1" name="add">Thêm</button><br>
-					<a href="#" title="">hoặc</a><br>
-				<button name="add" class="btn2">Nhập lại</button>
-				</div>
-		</div>
-	</div>
+    <div class="container">
+    <h1>Thông Tin Cầu thủ</h1>
+            <form action="" method="post">
+                
+                <label for="maxe">Mã Xe</label>
+                <input type="text" name="maxe" id="mact" placeholder="Nhập mã xe">
+                <label for="tenxe">Tên Xe</label>
+                <input type="text" name="tenxe" id="tenxe"placeholder="Nhập tên cxe">
+                <label for="nsx">Nhà Sản Xuất</label>
+                <input type="text" name="nsx" id="nsx"placeholder="Nhập nhà sản xuất">
+                <label for="gia">Giá</label>
+                <input type="text" name="gia" id="gia"placeholder="Nhập giá">
+                <div class="btn">
+                    <button name="add" class="btn1">Thêm</button><br>
+                    <a href="">Hoặc</a><br>
+                    <button name="add" class="btn2">Nhập Lại</button>
+                </div>
+            </form>
+    </div>
 </body>
 </html>
